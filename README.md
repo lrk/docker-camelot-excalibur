@@ -2,6 +2,8 @@
 
 Camelot/Excalibur docker image
 
+![docker-ci](https://github.com/lrk/docker-camelot-excalibur/workflows/docker-ci/badge.svg)
+
 # How to use
 
 ```
