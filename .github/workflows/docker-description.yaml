@@ -1,14 +1,17 @@
-name: Update Docker Hub Description
+name: "Update Docker Hub Description"
+
 on:
   push:
-    branches:
-      - main
+    branches: main
     paths:
       - README.md
       - .github/workflows/docker-description.yml
 jobs:
   dockerHubDescription:
+    name: "Docker Hub update description"
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+
     steps:
       - uses: actions/checkout@v2
 
