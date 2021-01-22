@@ -8,7 +8,6 @@ Camelot/Excalibur docker image
 
 ```
 docker pull 3lr1ck/excalibur:latest
-
 docker run --rm -p 5000:5000 3lr1ck/excalibur:latest
 ```
 
