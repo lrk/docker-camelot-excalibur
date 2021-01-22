@@ -29,5 +29,12 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/excalibur:latest
 
+      - name: Update repo description
+        uses: peter-evans/dockerhub-description@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+          repository: ${{ GITHUB_REPOSITORY }}
+
       - name: "Image digest"
         run: echo ${{ steps.docker_build.outputs.digest }}
